@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo List</title>
+<script src="https://kit.fontawesome.com/7bfd0428f1.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="todo-container">
+    <div class="heading">
+        
+        <h1>Todo List</h1>
+        <input type="date" id="dateInput">
+        <i class="fa-solid fa-moon"  id="icon"></i>
+    </div>
+ 
+  <div class="input-container">
+    <input type="text" id="taskInput" placeholder="Enter task here">
+    <button id="addTaskButton">Add </button>
+  </div>
+  <div class="tasks">
+    <div class="pending-tasks task">
+      <h2>Pending Tasks</h2>
+      <p id="tasksLeftCounter"></p>
+      <ul id="pendingTasks"></ul>
+      
+    </div>
+    <div class="completed-tasks task">
+      <h2>Completed Tasks</h2>
+      <p id="completedTasksCounter"></p>
+      <ul id="completedTasks"></ul>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
